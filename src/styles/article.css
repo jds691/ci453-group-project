@@ -1,0 +1,36 @@
+/* Common styling and layout code for article based web pages e.g. all excluding index.html */
+
+body {
+    display: grid;
+}
+
+.top-nav {
+    grid-area: top-nav;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+main {
+    grid-area: content;
+}
+
+/* Tablet */
+@media (min-width: 50em) {
+    body {
+        grid-template-columns: 3fr 6fr;
+        grid-template-areas:
+      "top-nav  top-nav"
+      "sidebar  header"
+      "sidebar  content";
+    }
+}
+
+/* Desktop+ */
+@media (min-width: 60em) {
+}
