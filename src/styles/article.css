@@ -50,6 +50,22 @@ body {
             "content";
 }
 
+.standout {
+    background-color: var(--standout-background-color);
+    border-radius: var(--corner-radius-regular);
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 16px;
+}
+
+.standout h2:first-of-type {
+    margin-top: 0;
+}
+
+.standout p:last-of-type {
+    margin-bottom: 0;
+}
+
 /* Tablet */
 @media (min-width: 50em) {
     body {
@@ -58,6 +74,11 @@ body {
                 "top-nav  top-nav"
                 "sidebar  header"
                 "sidebar  content";
+    }
+
+    main {
+        padding-left: calc(calc(100 / 1220) * 100%);
+        padding-right: calc(calc(100 / 1220) * 100%);
     }
 }
 
