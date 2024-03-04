@@ -19,7 +19,7 @@ html {
 
 header {
     grid-area: header;
-    margin: 30px;
+    margin: 16px;
     min-height: 260px;
     border-radius: var(--corner-radius-regular);
     display: flex;
@@ -39,6 +39,8 @@ aside {
 
 main {
     grid-area: content;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 body {
@@ -53,9 +55,7 @@ body {
 .standout {
     background-color: var(--standout-background-color);
     border-radius: var(--corner-radius-regular);
-    margin-left: -16px;
-    margin-right: -16px;
-    padding: 16px;
+    padding: 8px;
 }
 
 .standout h2:first-of-type {
@@ -68,6 +68,10 @@ body {
 
 /* Tablet */
 @media (min-width: 50em) {
+    header {
+        margin: 30px;
+    }
+
     body {
         grid-template-columns: 15.3fr 84.7fr;
         grid-template-areas:
@@ -79,6 +83,12 @@ body {
     main {
         padding-left: calc(calc(100 / 1220) * 100%);
         padding-right: calc(calc(100 / 1220) * 100%);
+    }
+
+    .standout {
+        margin-left: -16px;
+        margin-right: -16px;
+        padding: 16px;
     }
 }
 
