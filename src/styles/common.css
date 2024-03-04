@@ -1,3 +1,7 @@
+:root {
+    --corner-radius-regular: 16px;
+}
+
 .top-nav {
     background-color: white;
 }
