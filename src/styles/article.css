@@ -1,4 +1,16 @@
 /* Common styling and layout code for article based web pages e.g. all excluding index.html */
+
+:root {
+    /* Colour is the Source missing texture magenta :) */
+    --page-background-color: #ff00dc;
+    --sidebar-background-color: #ff00dc;
+    --standout-background-color: #ff00dc;
+}
+
+html {
+    background-color: var(--page-background-color);
+}
+
 .top-nav {
     grid-area: top-nav;
 }
@@ -9,6 +21,7 @@ header {
 
 aside {
     grid-area: sidebar;
+    background-color: var(--sidebar-background-color);
 }
 
 main {
