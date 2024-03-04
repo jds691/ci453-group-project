@@ -1,5 +1,4 @@
 /* Common styling and layout code for article based web pages e.g. all excluding index.html */
-
 .top-nav {
     grid-area: top-nav;
 }
@@ -28,7 +27,7 @@ body {
 /* Tablet */
 @media (min-width: 50em) {
     body {
-        grid-template-columns: 3fr 6fr;
+        grid-template-columns: 15.3fr 84.7fr;
         grid-template-areas:
                 "top-nav  top-nav"
                 "sidebar  header"
