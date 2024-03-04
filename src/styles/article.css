@@ -22,6 +22,8 @@ header {
 aside {
     grid-area: sidebar;
     background-color: var(--sidebar-background-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 main {
