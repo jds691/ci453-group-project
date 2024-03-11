@@ -1,0 +1,15 @@
+name: Website Validation
+
+on:
+  push:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Validate HTML
+        uses: Cyb3r-Jak3/html5validator-action@<latest version>
+        with:
+          root: src/
