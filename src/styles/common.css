@@ -15,3 +15,11 @@
 .top-nav li {
     display: inline;
 }
+
+body {
+    font-family: "PT Serif", serif;
+}
+
+h1, h2, h3 {
+    font-family: "Madimi One", sans-serif;
+}
