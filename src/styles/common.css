@@ -16,6 +16,35 @@
     display: inline;
 }
 
+.top-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.ai-security {
+    text-decoration-color: #59ACFF !important;
+}
+
+.computer-security {
+    text-decoration-color: #90FF5C !important;
+}
+
+.information-security {
+    text-decoration-color: #FFFD5C !important;
+}
+
+.network-security {
+    text-decoration-color: #FF5A5A !important;
+}
+
+.ncsc {
+    text-decoration-color: #591A52 !important;
+}
+
 body {
     font-family: "PT Serif", serif;
 }
