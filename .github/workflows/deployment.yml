@@ -1,0 +1,46 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy to Brighton Domains
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "domains"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: FTP Deployment
+        # You may pin to the exact commit or the version.
+        # uses: airvzxf/ftp-deployment-action@5483542d9d0055601ff0bf09c1e552f3a95c9ff8
+        uses: airvzxf/ftp-deployment-action@latest
+        with:
+          # FTP Server.
+          server: js2600.brighton.domains
+          # FTP User.
+          user: ${{ secrets.FTP_USERNAME }}
+          # FTP Password.
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Local directory.
+          local_dir: ./src
+          # Remote directory.
+          remote_dir: ./home/js2600/public_html/ci453/group-project
+          # FTP - Allow SSL encryption.
+          ftp_ssl_allow: true
+                
