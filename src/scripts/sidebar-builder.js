@@ -10,7 +10,7 @@
 */
 
 const listType = "ol";
-let sidebarList = document.querySelector(`aside nav ${listType}`);
+let sidebarList = document.querySelector(`aside nav`);
 
 if (sidebarList === null) {
     console.error("Unable to find an appropriate hook to generate sidebar contents into.");
@@ -19,7 +19,9 @@ if (sidebarList === null) {
     let navigationAnchors = document.querySelectorAll("a");
 
     let currentLevel = 2; // Current heading level, the lowest it can be at anytime is h2
-    let elementTrail = [sidebarList];
+    let startingPoint = document.createElement(listType);
+    sidebarList.appendChild(startingPoint);
+    let elementTrail = [startingPoint];
 
     for (let anchor of navigationAnchors) {
         /*
