@@ -52,6 +52,14 @@ body {
             "content";
 }
 
+.sidebar-list {
+
+}
+
+.sidebar-item {
+
+}
+
 .standout {
     background-color: var(--standout-background-color);
     border-radius: var(--corner-radius-regular);

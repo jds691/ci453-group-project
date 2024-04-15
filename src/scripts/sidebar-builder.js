@@ -20,6 +20,7 @@ if (sidebarList === null) {
 
     let currentLevel = 2; // Current heading level, the lowest it can be at anytime is h2
     let startingPoint = document.createElement(listType);
+    startingPoint.classList.add("sidebar-list");
     sidebarList.appendChild(startingPoint);
     let elementTrail = [startingPoint];
 
@@ -60,6 +61,7 @@ if (sidebarList === null) {
         } else if (headerLevel > currentLevel) {
             // Create a new list element
             let newList = document.createElement(listType);
+            newList.classList.add("sidebar-list");
             listElement.appendChild(newList);
             elementTrail.push(newList);
             listElement = newList;
@@ -72,6 +74,7 @@ if (sidebarList === null) {
 
         navAnchor.textContent = header.textContent;
         navAnchor.href = `#${anchor.id}`;
+        navAnchor.classList.add("sidebar-item");
         navLiItem.appendChild(navAnchor);
 
         listElement.appendChild(navLiItem);
