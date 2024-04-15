@@ -53,11 +53,13 @@ body {
 }
 
 .sidebar-list {
-
+    padding-left: 16px;
+    line-height: 1.4;
+    margin-top: 16px;
 }
 
 .sidebar-item {
-
+    margin-bottom: 7px;
 }
 
 .sidebar-link {
