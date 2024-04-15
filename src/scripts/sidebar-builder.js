@@ -70,11 +70,13 @@ if (sidebarList === null) {
         currentLevel = headerLevel;
 
         let navLiItem = document.createElement("li");
+        navLiItem.classList.add("sidebar-item");
+
         let navAnchor = document.createElement("a");
 
         navAnchor.textContent = header.textContent;
         navAnchor.href = `#${anchor.id}`;
-        navAnchor.classList.add("sidebar-item");
+        navAnchor.classList.add("sidebar-link");
         navLiItem.appendChild(navAnchor);
 
         listElement.appendChild(navLiItem);
