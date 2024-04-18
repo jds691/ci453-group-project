@@ -1,0 +1,29 @@
+name: Deployment
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to Brighton Domains
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.2
+      - name: Deploy to Brighton Domains
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          # username
+          username: ${{ secrets.FTP_USERNAME }}
+          # your sftp server
+          server: ${{ secrets.FTP_SERVER }}
+          # you can copy private_key from your *.pem file, keep format
+          ssh_private_key: nil
+          # will put all file under this path
+          local_path: ./src/*
+          # files will copy to under remote_path
+          remote_path: /home/js2600/public_html/ci453/group-project
+          # SSH passsword，If a password is set, the secret key pair is ignored
+          password: ${{ secrets.FTP_PASSWORD }}
+          
