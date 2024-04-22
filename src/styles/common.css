@@ -25,6 +25,10 @@
     text-decoration: underline;
 }
 
+.home {
+    text-decoration-color: #B759FF !important;
+}
+
 .ai-security {
     text-decoration-color: #59ACFF !important;
 }
