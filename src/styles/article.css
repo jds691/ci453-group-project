@@ -81,10 +81,6 @@ body {
 
 /* Tablet */
 @media (min-width: 50em) {
-    header {
-        margin: 30px;
-    }
-
     body {
         grid-template-columns: 15.3fr 84.7fr;
         grid-template-areas:

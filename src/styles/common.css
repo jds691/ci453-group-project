@@ -72,3 +72,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (min-width: 50em) {
+    header {
+        margin: 30px;
+    }
+}
