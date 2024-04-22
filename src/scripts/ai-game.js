@@ -1,5 +1,3 @@
-// NOT CONNECTED YET 
-
 /**
 * Wordfind.js 0.0.1
 * (c) 2012 Bill, BunKat LLC.
