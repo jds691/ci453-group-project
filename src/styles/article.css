@@ -55,15 +55,21 @@ body {
 .sidebar-list {
     padding-left: 16px;
     line-height: 1.4;
-    margin-top: 16px;
 }
 
 .sidebar-item {
-    margin-bottom: 7px;
+    padding: 7px;
+}
+
+.sidebar-item:hover {
+    background: var(--standout-background-color);
+    text-decoration: underline;
+    border-radius: var(--corner-radius-regular);
 }
 
 .sidebar-link {
-
+    color: black;
+    text-decoration: none;
 }
 
 .standout {

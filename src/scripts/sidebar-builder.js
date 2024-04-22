@@ -9,7 +9,7 @@
 *   by changed listType below.
 */
 
-const listType = "ol";
+const listType = "ul";
 let sidebarList = document.querySelector(`aside nav`);
 
 if (sidebarList === null) {
