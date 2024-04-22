@@ -35,6 +35,7 @@ aside {
     background-color: var(--sidebar-background-color);
     padding-left: 1rem;
     padding-right: 1rem;
+    border-bottom-right-radius: var(--corner-radius-regular);
 }
 
 main {
