@@ -61,3 +61,14 @@ body {
 h1, h2, h3 {
     font-family: "Madimi One", sans-serif;
 }
+
+header {
+    margin: 16px;
+    min-height: 260px;
+    border-radius: var(--corner-radius-regular);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
