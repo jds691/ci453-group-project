@@ -58,6 +58,7 @@ if (sidebarList === null) {
         if (headerLevel < currentLevel) {
             // Pop out by 1 element
             elementTrail.pop();
+            listElement = elementTrail[elementTrail.length - 1];
         } else if (headerLevel > currentLevel) {
             // Create a new list element
             let newList = document.createElement(listType);
