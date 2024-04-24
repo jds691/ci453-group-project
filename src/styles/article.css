@@ -101,6 +101,13 @@ body {
     }
 }
 
+@media (min-width: 50em) {
+    .container-follow {
+        position: sticky;
+        top: 16px;
+    }
+}
+
 /* Desktop+ */
 @media (min-width: 60em) {
 }

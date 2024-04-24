@@ -10,7 +10,7 @@
 */
 
 const listType = "ul";
-let sidebarList = document.querySelector(`aside nav`);
+let sidebarList = document.querySelector(`aside div nav`);
 
 if (sidebarList === null) {
     console.error("Unable to find an appropriate hook to generate sidebar contents into.");
