@@ -1,0 +1,107 @@
+header {
+    background-color: #B759FF;
+}
+
+.text-padding {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.article-grid {
+    margin-left: 16px;
+    margin-right: 16px;
+    column-gap: 16px;
+}
+
+.article-cell {
+    /*border: 1px solid black;*/
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: var(--corner-radius-regular);
+    padding: 16px;
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 150px; /*Just doing as Figma says*/
+
+    h2 {
+        margin-top: 0;
+    }
+
+    a {
+        border-radius: var(--corner-radius-regular);
+        border: 1px solid black;
+        padding: 8px;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    img {
+        aspect-ratio: 1;
+        border-radius: 0;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.article-cell:first-of-type {
+    margin-top: 0;
+}
+
+.article-cell:last-of-type {
+    margin-bottom: 0;
+}
+
+.computer-security-cell {
+    background-color: #C9FFB0;
+
+    a {
+        background-color: #90FF5C;
+    }
+}
+
+.information-security-cell {
+    background-color: #FFFEBB;
+
+    a {
+        background-color: #FFFD5C;
+    }
+}
+
+.network-security-cell {
+    background-color: #FFE1E1;
+
+    a {
+        background-color: #FF5A5A;
+    }
+}
+
+.ai-security-cell {
+    background-color: #BFDFFF;
+
+    a {
+        background-color: #59ACFF;
+    }
+}
+
+@media (min-width: 50em) {
+    .text-padding {
+        align-content: center;
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    .article-grid {
+        columns: 2;
+        margin: 30px 30px 0;
+    }
+}
+
+/* Desktop+ */
+@media (min-width: 60em) {
+}

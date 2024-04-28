@@ -17,6 +17,7 @@
 
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/common.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
 
     <!--<link href="styles/layout-debug.css" rel="stylesheet">-->
 
@@ -25,74 +26,126 @@
 <body>
 <nav class="top-nav"> <!--Article selection area-->
     <menu>
-        <li><a class="home" href="index.html">Home</a></li>
-        <li><a class="computer-security" href="computer-security.html">Computer Security</a></li>
-        <li><a class="information-security" href="information-security.html">Information Security</a></li>
-        <li><a class="network-security" href="network-security.html">Network Security</a></li>
-        <li><a class="ai-security" href="ai-security.html">Cyber Security & Artificial Intelligence</a></li>
-        <li><a class="ncsc" href="https://www.ncsc.gov.uk/section/information-for/individuals-families" target="_blank">National
+        <li><a class="home-nav-link" href="index.html">Home</a></li>
+        <li><a class="computer-security-nav-link" href="computer-security.html">Computer Security</a></li>
+        <li><a class="information-security-nav-link" href="information-security.html">Information Security</a></li>
+        <li><a class="network-security-nav-link" href="network-security.html">Network Security</a></li>
+        <li><a class="ai-security-nav-link" href="ai-security.html">Cyber Security & Artificial Intelligence</a></li>
+        <li><a class="ncsc-nav-link" href="https://www.ncsc.gov.uk/section/information-for/individuals-families"
+               target="_blank">National
             Cyber Security Centre</a></li>
     </menu>
 </nav>
 
 
 <main>
-    <a>
+    <header> <!--The floating title area for the article-->
+        <h1>Cyber Security & Artificial Intelligence</h1>
+    </header>
+    <div class="article-grid"> <!--Major article selection-->
+        <div class="article-cell computer-security-cell">
+            <img alt="Placeholder image." src="resources/images/placeholder.png">
+            <div>
+                <h2>Computer Security</h2>
+                <p>
+                    Some information here.
+                </p>
+                <a href="computer-security.html">Show Me!</a>
+            </div>
+        </div>
+        <div class="article-cell network-security-cell">
+            <img alt="Placeholder image." src="resources/images/placeholder.png">
+            <div>
+                <h2>Network Security</h2>
+                <p>
+                    Some information here.
+                </p>
+                <a href="network-security.html">Show Me!</a>
+            </div>
+        </div>
+        <div class="article-cell information-security-cell">
+            <img alt="Placeholder image." src="resources/images/placeholder.png">
+            <div>
+                <h2>Information Security</h2>
+                <p>
+                    Some information here.
+                </p>
+                <a href="information-security.html">Show Me!</a>
+            </div>
+        </div>
+        <div class="article-cell ai-security-cell">
+            <img alt="Placeholder image." src="resources/images/placeholder.png">
+            <div>
+                <!--Me when I cheat to force the layout a specific way-->
+                <h2>Cyber Security<br> & Artificial Intelligence</h2>
+                <p>
+                    Some information here.
+                </p>
+                <a href="ai-security.html">Show Me!</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-padding">
         <h2>What is cyber security?</h2>
-    </a>
-    <p>
-        Cyber security is the means by which individuals and organisations reduce the risk of being affected by cyber
-        crime.
-    </p>
-    <p>
-        Cyber security's core function is to protect the devices we all use (smartphones, laptops, tablets and
-        computers), and the services we access online - both at home and work - from theft or damage. It's also about
-        preventing unauthorised access to the vast amounts of personal information we store on these devices, and
-        online.
-    </p>
-    <p>
-        Cyber security is important because smartphones, computers and the internet are now such a fundamental part of
-        modern life, that it's difficult to imagine how we'd function without them. From online banking and shopping, to
-        email and social media, it's more important than ever to take steps that can prevent cyber criminals getting
-        hold of our accounts, data, and devices.
-    </p>
-    <p><strong>
-        This website will go over key concepts in Computer, Information and network security as well as the impact of AI
-        on cyber security.
-    </strong></p>
+        <p>
+            Cyber security is the means by which individuals and organisations reduce the risk of being affected by
+            cyber
+            crime.
+        </p>
+        <p>
+            Cyber security's core function is to protect the devices we all use (smartphones, laptops, tablets and
+            computers), and the services we access online - both at home and work - from theft or damage. It's also
+            about
+            preventing unauthorised access to the vast amounts of personal information we store on these devices, and
+            online.
+        </p>
+        <p>
+            Cyber security is important because smartphones, computers and the internet are now such a fundamental part
+            of
+            modern life, that it's difficult to imagine how we'd function without them. From online banking and
+            shopping, to
+            email and social media, it's more important than ever to take steps that can prevent cyber criminals getting
+            hold of our accounts, data, and devices.
+        </p>
+        <p><strong>
+            This website will go over key concepts in Computer, Information and network security as well as the impact
+            of AI
+            on cyber security.
+        </strong></p>
 
-    <a>
         <h2>Steps to keep yourself safe online:</h2>
-    </a>
-    <ol>
-        <li><strong>Use strong and separate passwords</strong> - strong passwords make it harder for hackers to guess or
-            brute-force your password and separate passwords stop them from gaining access to other accounts if they
-            only have one password.
-        </li>
-        <li><strong>Install the latest software and app updates</strong> - these updates often contain patches that fix
-            any weaknesses in the code that hackers could exploit.
-        </li>
-        <li><strong>Turn on 2-Step verification (2SV)</strong> - an extra step to log in means hackers cannot gain
-            access with only a password.
-        </li>
-        <li><strong>Password managers</strong> - store passwords so you don't lose or forget them, allow you to use
-            stronger passwords that may be harder to remember and make it easier to log in without having to try lots of
-            passwords.
-        </li>
-        <li><strong>Back up your data</strong> - no one wants to lose photos or contacts, back them up to the cloud so
-            they are accessible if your device gets stolen/lost.
-        </li>
-    </ol>
+        <ol>
+            <li><strong>Use strong and separate passwords</strong> - strong passwords make it harder for hackers to
+                guess or
+                brute-force your password and separate passwords stop them from gaining access to other accounts if they
+                only have one password.
+            </li>
+            <li><strong>Install the latest software and app updates</strong> - these updates often contain patches that
+                fix
+                any weaknesses in the code that hackers could exploit.
+            </li>
+            <li><strong>Turn on 2-Step verification (2SV)</strong> - an extra step to log in means hackers cannot gain
+                access with only a password.
+            </li>
+            <li><strong>Password managers</strong> - store passwords so you don't lose or forget them, allow you to use
+                stronger passwords that may be harder to remember and make it easier to log in without having to try
+                lots of
+                passwords.
+            </li>
+            <li><strong>Back up your data</strong> - no one wants to lose photos or contacts, back them up to the cloud
+                so
+                they are accessible if your device gets stolen/lost.
+            </li>
+        </ol>
 
-    <a>
         <h2>Passwords</h2>
-    </a>
-    <ol>
-        <li>3 random words</li>
-        <li>At least 8 characters</li>
-        <li>Containing uppercase, lowercase, numbers and special characters</li>
-        <li>Do not use name, date of birth, pet name or any easily guessable information.</li>
-    </ol>
+        <ol>
+            <li>3 random words</li>
+            <li>At least 8 characters</li>
+            <li>Containing uppercase, lowercase, numbers and special characters</li>
+            <li>Do not use name, date of birth, pet name or any easily guessable information.</li>
+        </ol>
+    </div>
 </main>
 </body>
 </html>
