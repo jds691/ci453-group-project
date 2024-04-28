@@ -71,10 +71,20 @@ header {
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    h1 {
+        margin-left: 0.67em;
+        margin-right: 0.67em;
+    }
 }
 
 @media (min-width: 50em) {
     header {
         margin: 30px;
+
+        h1 {
+            margin-left: unset;
+            margin-right: unset;
+        }
     }
 }
