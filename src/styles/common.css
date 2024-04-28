@@ -25,27 +25,27 @@
     text-decoration: underline;
 }
 
-.home {
+.home-nav-link {
     text-decoration-color: #B759FF !important;
 }
 
-.ai-security {
+.ai-security-nav-link {
     text-decoration-color: #59ACFF !important;
 }
 
-.computer-security {
+.computer-security-nav-link {
     text-decoration-color: #90FF5C !important;
 }
 
-.information-security {
+.information-security-nav-link {
     text-decoration-color: #FFFD5C !important;
 }
 
-.network-security {
+.network-security-nav-link {
     text-decoration-color: #FF5A5A !important;
 }
 
-.ncsc {
+.ncsc-nav-link {
     text-decoration-color: #591A52 !important;
 }
 
