@@ -45,7 +45,7 @@ h1 {
     padding: 20px;
     float: left;
     margin: 30px 20px;
-    width: 510px;
+    width: 510px; /*TODO: The width of the puzzle appears to keep changing on different browsers???*/
 }
 
 #puzzle div {
