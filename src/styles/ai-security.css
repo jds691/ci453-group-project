@@ -41,6 +41,16 @@ h1 {
         max-width: 25%;
         height: auto;
       }
+
+    .hacked {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+.robot {
+    float: right;
+}
 }
 
 /**
