@@ -1,3 +1,17 @@
+:root {
+    --page-background-color: #EACEFF;
+    --sidebar-background-color: #CAADDB;
+    --standout-background-color: #B759FF;
+    --header-background-image: url("../resources/images/home-image.jpg");
+
+    /*- AI Game -*/
+    --dkBlue: #306a8b;
+    --ltBlue: #6891ad;
+    --red: #ee5426;
+    --lightGrey: #c4c4c4;
+}
+
+
 header {
     background-color: #B759FF;
 }
