@@ -2,6 +2,19 @@
     --corner-radius-regular: 16px;
 }
 
+.group-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group-item {
+    box-sizing: border-box; /*Includes padding and border when calculating width*/
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    align-items: center;
+}
+
 .top-nav {
     background-color: white;
 }
@@ -86,5 +99,10 @@ header {
             margin-left: unset;
             margin-right: unset;
         }
+    }
+
+    .group-item {
+        flex: 1 1 calc(calc(100% / 2) - 16px);
+        margin: 8px;
     }
 }
