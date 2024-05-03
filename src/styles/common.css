@@ -125,6 +125,16 @@
     top: 0;
 }
 
+#top-nav-title {
+    position: relative;
+    float: left;
+    padding: 20px 16px;
+    margin-left: 0;
+    margin-right: auto;
+    text-decoration: none;
+    color: black;
+}
+
 .group-container {
     display: flex;
     flex-wrap: wrap;
@@ -271,5 +281,9 @@ header {
 
     .top-nav a:hover {
         text-decoration: underline;
+    }
+
+    #top-nav-title {
+        display: none;
     }
 }
