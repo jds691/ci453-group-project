@@ -2,4 +2,10 @@
     --page-background-color: #FFFEBB;
     --sidebar-background-color: #FDE18E;
     --standout-background-color: #FFFD5C;
+
+    --header-background-image: url('../resources/images/information-security-header-background.avif');
+}
+
+h1 {
+    color: white;
 }
