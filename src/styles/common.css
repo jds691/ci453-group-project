@@ -5,6 +5,7 @@
 .group-container {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .group-item {
@@ -14,6 +15,16 @@
     flex: 1 1 100%;
     align-items: center;
     /*height: 100%*/
+}
+
+.is-mobile {
+    display: unset;
+    visibility: visible;
+}
+
+.is-desktop {
+    display: none;
+    visibility: hidden;
 }
 
 .top-nav {
@@ -104,5 +115,15 @@ header {
 
     .group-item {
         flex: 1 1 calc(calc(100% / 2) - 16px);
+    }
+
+    .is-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    .is-desktop {
+        display: unset;
+        visibility: visible;
     }
 }
