@@ -35,11 +35,15 @@ if (sidebarList === null) {
         let noIndex = anchor.matches(".no-index");
         let childrenCount = anchor.childElementCount;
         let anchorId = anchor.id;
+        let visibilityChecks = {
+            visibilityProperty: true,
+        };
 
         if (
             noIndex || // Ignores indexing
             childrenCount === 0 || // Has no children
-            !anchorId // Doesn't contain a link
+            !anchorId || // Doesn't contain a link
+            !anchor.checkVisibility(visibilityChecks) // Anchor isn't visible
         ) {
             continue;
         }
