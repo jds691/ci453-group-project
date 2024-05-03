@@ -27,6 +27,11 @@ img {
     width: 50%;
 }
 
+.robot {
+    height: 100%;
+    max-width: unset;
+}
+
 /*TODO: Fix the styling to make it compatible with the rest of the page*/
 
 /* - AI Game - */

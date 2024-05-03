@@ -13,6 +13,7 @@
     flex-direction: column;
     flex: 1 1 100%;
     align-items: center;
+    /*height: 100%*/
 }
 
 .top-nav {
@@ -103,6 +104,5 @@ header {
 
     .group-item {
         flex: 1 1 calc(calc(100% / 2) - 16px);
-        margin: 8px;
     }
 }
