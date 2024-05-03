@@ -1,5 +1,128 @@
 :root {
     --corner-radius-regular: 16px;
+
+    /* Transition Speeds */
+    --hover-transition: .2s;
+}
+
+/*Taken from: https://github.com/JazerBarclay/ci435*/
+.top-nav {
+    /* Fancy Drop Shadow :O */
+    background-color: var(--sidebar-background-color);
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    border-bottom-left-radius: var(--corner-radius-regular);
+    border-bottom-right-radius: var(--corner-radius-regular);
+}
+
+/* .top-navigation background (using the unordered list encapsulation) */
+.top-nav menu {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Set all item links to display block and set padding */
+.top-nav li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+/* On link hover change colour */
+.top-nav li a:hover,
+.top-nav .menu-btn:hover {
+    transition: var(--hover-transition);
+}
+
+/* menu */
+.top-nav menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+.top-nav .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+/* Create center hamburger line */
+.top-nav .menu-icon .navicon {
+    background: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: all .2s ease-out;
+    width: 18px;
+}
+
+/* Create top and bottom hamburger lines */
+.top-nav .menu-icon .navicon:before,
+.top-nav .menu-icon .navicon:after {
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+/*.top-nav .menu-icon:hover {
+    background-color: var(--standout-background-color);
+    border-radius: var(--corner-radius-regular);
+}*/
+
+/* Set bottom hamburger line */
+.top-nav .menu-icon .navicon:before {
+    top: 5px;
+}
+
+/* Set top hamburger line */
+.top-nav .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* Hide Checkbox */
+.top-nav .menu-btn {
+    display: none;
+}
+
+/* Give height to menu so it rolls out on click */
+.top-nav .menu-btn:checked ~ menu {
+    max-height: 355px;
+}
+
+/* Hide Middle Hamburger Line */
+.top-nav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+/* Rotate Bottom Hamburger Line */
+.top-nav .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+/* Rotate Top Hamburger Line */
+.top-nav .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+/* Reset Position to Keep Centered */
+.top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.top-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
 }
 
 .group-container {
@@ -25,41 +148,6 @@
 .is-desktop {
     display: none;
     visibility: hidden;
-}
-
-.top-nav {
-    background-color: white;
-    align-items: flex-start;
-    display: flex;
-    align-self: stretch;
-}
-
-.top-nav menu {
-    list-style-type: none;
-    padding-left: 30px;
-    padding-right: 30px;
-
-    display: flex;
-    justify-content: space-between; /*https://css-tricks.com/almanac/properties/j/justify-content/*/
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-
-    width: 100%
-}
-
-.top-nav li {
-    text-align: center;
-}
-
-.top-nav a {
-    color: black;
-    text-decoration: none;
-    text-align: center;
-}
-
-.top-nav a:hover {
-    text-decoration: underline;
 }
 
 .home-nav-link {
@@ -137,5 +225,51 @@ header {
     .is-desktop {
         display: block;
         visibility: visible;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .top-nav {
+        background-color: white;
+        align-items: flex-start;
+        display: flex;
+        align-self: stretch;
+        border-radius: 0;
+    }
+
+    .top-nav menu {
+        list-style-type: none;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        max-height: unset;
+
+        display: flex;
+        justify-content: space-between; /*https://css-tricks.com/almanac/properties/j/justify-content/*/
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        width: 100%
+    }
+
+    .top-nav li {
+        text-align: center;
+    }
+
+    .top-nav a {
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .top-nav a:hover {
+        text-decoration: underline;
     }
 }
