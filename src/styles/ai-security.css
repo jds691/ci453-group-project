@@ -28,8 +28,7 @@ img {
 }
 
 .robot {
-    height: 100%;
-    max-width: unset;
+    max-width: 100%;
 }
 
 /*TODO: Fix the styling to make it compatible with the rest of the page*/
@@ -162,5 +161,12 @@ button::-moz-focus-inner {
 
     &:hover, &.gameSolved {
         opacity: 1;
+    }
+}
+
+@media (min-width: 50em) {
+    .robot {
+        height: 100%;
+        max-width: 25%;
     }
 }
