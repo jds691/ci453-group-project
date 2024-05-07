@@ -5,6 +5,10 @@
     --header-background-image: url("../resources/images/home-image.jpg");
 }
 
+html {
+    background-color: var(--page-background-color);
+}
+
 header {
     background-image: var(--header-background-image);
 }
