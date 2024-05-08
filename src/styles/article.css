@@ -10,7 +10,7 @@
 }
 
 html {
-    background-color: var(--page-background-color);
+    background-color: var(--sidebar-background-color);
 }
 
 .top-nav {
@@ -22,18 +22,26 @@ header {
     background-image: var(--header-background-image);
 }
 
+.header-background {
+    background-color: var(--page-background-color);
+    border-top-left-radius: var(--corner-radius-regular);
+    border-top-right-radius: var(--corner-radius-regular);
+}
+
 aside {
     grid-area: sidebar;
     background-color: var(--sidebar-background-color);
     padding-left: 1rem;
     padding-right: 1rem;
-    border-bottom-right-radius: var(--corner-radius-regular);
 }
 
 main {
     grid-area: content;
     padding-left: 16px;
     padding-right: 16px;
+    border-bottom-left-radius: var(--corner-radius-regular);
+    border-bottom-right-radius: var(--corner-radius-regular);
+    background-color: var(--page-background-color);
 }
 
 body {
@@ -42,7 +50,15 @@ body {
             "top-nav"
             "header"
             "sidebar"
-            "content";
+            "content"
+            "footer";
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--sidebar-background-color);
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .sidebar-list {
@@ -86,10 +102,18 @@ body {
         grid-template-areas:
                 "top-nav  top-nav"
                 "sidebar  header"
-                "sidebar  content";
+                "sidebar  content"
+                "sidebar  footer";
     }
 
     main {
+        padding-left: calc(calc(100 / 1220) * 100%);
+        padding-right: calc(calc(100 / 1220) * 100%);
+
+        border-bottom-right-radius: 0;
+    }
+
+    footer {
         padding-left: calc(calc(100 / 1220) * 100%);
         padding-right: calc(calc(100 / 1220) * 100%);
     }
@@ -99,12 +123,14 @@ body {
         margin-right: -16px;
         padding: 16px;
     }
-}
 
-@media (min-width: 50em) {
     .container-follow {
         position: sticky;
         top: 16px;
+    }
+
+    .header-background {
+        border-top-right-radius: 0;
     }
 }
 
