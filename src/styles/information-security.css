@@ -9,3 +9,24 @@
 h1 {
     color: white;
 }
+
+#information-mini-game-standout {
+    gap: 16px;
+    margin-top: 8px;
+
+    a {
+        text-decoration: none;
+    }
+
+    h3 {
+        color: black;
+    }
+}
+
+@media (min-width: 50em) {
+    #information-mini-game-standout {
+        a {
+            text-decoration: underline;
+        }
+    }
+}
