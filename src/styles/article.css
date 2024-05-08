@@ -85,6 +85,8 @@ footer {
     background-color: var(--standout-background-color);
     border-radius: var(--corner-radius-regular);
     padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .standout h2:first-of-type {

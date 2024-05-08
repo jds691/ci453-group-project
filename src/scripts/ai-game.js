@@ -523,7 +523,7 @@
           var row = puzzle[i];
           output += '<div>';
           // for each element in that row
-          document.querySelector("#puzzle").style.width = `${30 * row.length}px`;
+            /*document.querySelector("#puzzle").style.width = `${30 * row.length}px`;*/
           for (var j = 0, width = row.length; j < width; j++) {
               // append our button with the appropriate class
               output += '<button class="puzzleSquare" x="' + j + '" y="' + i + '">';

@@ -31,6 +31,11 @@ img {
     max-width: 100%;
 }
 
+.puzzle-group-item {
+    align-items: center;
+    justify-content: center;
+}
+
 /*TODO: Fix the styling to make it compatible with the rest of the page*/
 
 /* - AI Game - */
@@ -43,9 +48,9 @@ img {
 */
 
 .puzzleWrap {
-    background: var(--dkBlue);
-    width: 850px;
-    margin: 50px auto 0;
+    /*background: var(--dkBlue);*/
+    /*width: 850px;*/
+    /*margin: 50px auto 0;*/
 
     p {
         font: 22pt sans-serif;
@@ -57,12 +62,12 @@ img {
 /**
 * Styles for the puzzle
 */
-#puzzle {
-    padding: 20px;
-    float: left;
-    margin: 30px 20px;
-    width: 510px; /*TODO: The width of the puzzle appears to keep changing on different browsers???*/
-}
+/*#puzzle {
+    /*padding: 20px;*/
+/*float: left;*/
+/*margin: 30px 20px;*/
+/*width: 510px; TODO: The width of the puzzle appears to keep changing on different browsers???
+}*/
 
 #puzzle div {
     width: 100%;
@@ -123,7 +128,7 @@ button::-moz-focus-inner {
      column-gap: 20px;*/
     width: 250px;
     color: var(--ltBlue);
-    float: left;
+    /*float: left;*/
     margin-top: 37px;
 }
 
@@ -135,7 +140,7 @@ button::-moz-focus-inner {
     padding: 0 0 7px;
     font: 1em sans-serif;
     display: inline-block;
-    float: left;
+    /*float: left;*/
     width: 100px;
 }
 
@@ -165,6 +170,7 @@ button::-moz-focus-inner {
 }
 
 @media (min-width: 50em) {
+    /* TODO: This breaks on Safari and makes it display at full resolution (it uses 100% of image height, not parent) */
     .robot {
         height: 100%;
         max-width: 25%;
