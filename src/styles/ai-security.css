@@ -170,9 +170,7 @@ button::-moz-focus-inner {
 }
 
 @media (min-width: 50em) {
-    /* TODO: This breaks on Safari and makes it display at full resolution (it uses 100% of image height, not parent) */
     .robot {
-        height: 100%;
         max-width: 25%;
     }
 }
