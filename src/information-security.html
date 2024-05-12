@@ -108,8 +108,97 @@
     </p>
     <div class="standout">
         <a id="mini-games">
-            <h2>Mini Games</h2>
+            <h2>Mini Game</h2>
         </a>
+        <div class="quiz-container">
+            <h3>Multiple Choice Quiz</h3>
+            <hr>
+            <form id="quiz-form">
+                <div class="d-flex">
+                    <div class="question">
+                        <p>1. What does CIA stand for?</p>
+                        <div class="answers">
+                            <label>
+                                <input type="radio" name="q1" value="a">
+                                Central Intelligence Agency
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="b">
+                                Confidentiality Integrity Availability
+                            </label>
+                            <label>
+                                <input type="radio" name="q1" value="c">
+                                Confidentiality Integrity Anonyminity
+                            </label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>2. How do you stop information security risks?</p>
+                        <div class="answers">
+                            <label>
+                                <input type="radio" name="q2" value="a">
+                                Give employees training
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="b">
+                                Use encryption
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="c">
+                                Firewalls
+                            </label>
+                            <label>
+                                <input type="radio" name="q2" value="d">
+                                All of the above
+                            </label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>3. What is Information Security?</p>
+                        <div class="answers">
+                            <label>
+                                <input type="radio" name="q3" value="a">
+                                Practice of protecting information
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="b">
+                                    Spreading false information
+                                </label>
+                                <label>
+                                    <input type="radio" name="q3" value="c">
+                                    Learning how to hack
+                                </label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p>4. What are the dangers related with Information Security?</p>
+                        <div class="answers">
+                            <label>
+                                <input type="radio" name="q4" value="a">
+                                 Human error
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="b">
+                                Malware
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="c">
+                                Phishing
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="q4" value="d">
+                                All of the above
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+            <div class="result" id="result"></div>
+        </div>
+        
         <p>
             The NCSC provides a number of fun games and interactive videos relating to keeping your information safe.
             You should try out Cyber Sprinter and and the CyberFirst interactive videos!
@@ -135,5 +224,6 @@
 </main>
 
 <script src="scripts/sidebar-builder.js"></script>
+<script src="scripts/mini-game.js"></script>
 </body>
 </html>
