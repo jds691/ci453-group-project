@@ -53,7 +53,7 @@ input[type="radio"]{
     display:block;
     margin-bottom: 20px auto;
     padding: 10px 20px;
-    background: #d29b05;
+    background: #f8cb18;
     color:#fff;
     border:none;
     border-radius: 5px;
@@ -65,7 +65,7 @@ input[type="radio"]{
     font-size: 22px;
     margin-top: 20px;
     padding: 10px;
-    background: ;
+    background: #f8cb18;
     border-radius: 5px;
     text-align: center;
 }
