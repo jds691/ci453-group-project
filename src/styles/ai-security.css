@@ -6,9 +6,9 @@
 
     /*- AI Game -*/
     --dkBlue: #306a8b;
-    --ltBlue: #6891ad;
+    --ltBlue: #000000; /*black*/
     --red: #ee5426;
-    --lightGrey: #c4c4c4;
+    --lightGrey: #fcfafa; /*white*/
 }
 
 h1 {
