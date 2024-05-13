@@ -246,7 +246,6 @@ header {
     }
 
     .top-nav {
-        background-color: white;
         align-items: flex-start;
         display: flex;
         align-self: stretch;
