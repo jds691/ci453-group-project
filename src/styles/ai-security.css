@@ -65,19 +65,21 @@ img {
 /*#puzzle {
     /*padding: 20px;*/
 /*float: left;*/
-/*margin: 30px 20px;*/
-/*width: 510px; TODO: The width of the puzzle appears to keep changing on different browsers???
+/*margin: 30px 20px;
 }*/
 
 #puzzle div {
     width: 100%;
     margin: 0 auto;
+    display: flex;
 }
 
 /* style for each square in the puzzle */
 #puzzle .puzzleSquare {
     height: 30px;
+    max-height: 30px;
     width: 30px;
+    max-width: 30px;
     text-transform: uppercase;
     background-color: var(--dkBlue);
     border: 0;
