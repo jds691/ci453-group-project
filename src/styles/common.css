@@ -272,6 +272,12 @@ header {
         text-align: center;
     }
 
+    .top-nav li a {
+        padding: 12px 12px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
     .top-nav a {
         color: black;
         text-decoration: none;
@@ -279,7 +285,8 @@ header {
     }
 
     .top-nav a:hover {
-        text-decoration: underline;
+        background-color: var(--standout-background-color);
+        border-radius: var(--corner-radius-regular);
     }
 
     #top-nav-title {
