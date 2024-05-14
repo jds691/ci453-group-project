@@ -5,16 +5,43 @@
     --header-background-image: url("../resources/images/home-image.jpg");
 }
 
+body {
+    display: grid;
+    grid-template-areas:
+            "top-nav"
+            "header"
+            "content"
+            "footer";
+}
+
 html {
-    background-color: var(--page-background-color);
+    background-color: var(--sidebar-background-color);
 }
 
 header {
+    grid-area: header;
     background-image: var(--header-background-image);
+    background-color: var(--page-background-color);
+}
+
+main {
+    grid-area: content;
+    background-color: var(--page-background-color);
+    border-bottom-left-radius: var(--corner-radius-regular);
+    border-bottom-right-radius: var(--corner-radius-regular);
 }
 
 h1 {
     color: white;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--sidebar-background-color);
+}
+
+footer div:last-child {
+    margin-bottom: 0;
 }
 
 .text-padding {

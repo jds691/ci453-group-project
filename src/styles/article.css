@@ -13,19 +13,9 @@ html {
     background-color: var(--sidebar-background-color);
 }
 
-.top-nav {
-    grid-area: top-nav;
-}
-
 header {
     grid-area: header;
     background-image: var(--header-background-image);
-}
-
-.header-background {
-    background-color: var(--page-background-color);
-    border-top-left-radius: var(--corner-radius-regular);
-    border-top-right-radius: var(--corner-radius-regular);
 }
 
 aside {

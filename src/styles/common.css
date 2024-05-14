@@ -5,11 +5,18 @@
     --hover-transition: .2s;
 }
 
+.header-background {
+    background-color: var(--page-background-color);
+    border-top-left-radius: var(--corner-radius-regular);
+    border-top-right-radius: var(--corner-radius-regular);
+}
+
 /*Taken from: https://github.com/JazerBarclay/ci435*/
 .top-nav {
     /* Fancy Drop Shadow :O */
     background-color: var(--sidebar-background-color);
     position: relative;
+    grid-area: top-nav;
     width: 100%;
     z-index: 3;
     border-bottom-left-radius: var(--corner-radius-regular);
