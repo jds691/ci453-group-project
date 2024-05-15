@@ -24,6 +24,12 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="PasswordChecker.js"></script>
+
+    <style>
+        .standout ul li {
+            margin-bottom: 20px; /* Double spacing */
+        }
+    </style>
 </head>
 <body>
 <nav class="top-nav"> <!--Article selection area-->
@@ -88,6 +94,13 @@
     <p><small><a href="">Words</a></small></p>
     <p><small>2024</small></p>
 </footer>
+
+<script>
+    $(function() {
+        // Initialize the password checker game
+        passwordchecker.init('passwordInput', 'result');
+    });
+</script>
 
 </body>
 </html>
