@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Cyber Basics - Computer Security</title>
-
     <meta content="Cyber Basics - Computer Security" property="og:title">
     <meta content="Learn about the basics of cyber security!" property="og:description">
     <meta content="en_GB" property="og:locale">
@@ -22,14 +21,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="var(--sidebar-background-color)" name="theme-color">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="PasswordChecker.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Initialize the password checker game
-            passwordchecker.init('passwordInput', 'result');
-        });
-    </script>
 </head>
 <body>
 <nav class="top-nav"> <!--Article selection area-->
@@ -71,7 +65,7 @@
         <h3>Why is Computer Security Important for Teens?</h3>
         <p>As a teenager, you might not think much about computer security. After all, what could hackers possibly want with your Snapchat account or your online gaming profile, right? But the truth is, your personal information is valuable, and cybercriminals are always on the lookout for easy targets. By practicing good computer security habits now, you can protect yourself from becoming a victim in the future.</p>
         <h3>Tips for Staying Safe Online</h3>
-        <ul style="margin-top: 10px; margin-bottom: 10px;">
+        <ul>
             <li>Use Strong Passwords: Avoid using easy-to-guess passwords like "123456" or "password." Instead, choose passwords that are long, complex, and unique for each of your accounts. Consider using a password manager to help you keep track of them all.</li>
             <li>Keep Your Software Updated: Make sure to keep your devices and apps up to date with the latest security patches and updates. This helps to fix any vulnerabilities that hackers could exploit to gain access to your information.</li>
             <li>Be Wary of Suspicious Emails and Links: Don't click on links or download attachments from unknown or suspicious sources, as they could contain malware or lead to phishing scams designed to steal your personal information.</li>
@@ -94,6 +88,12 @@
     <p><small><a href="">Words</a></small></p>
     <p><small>2024</small></p>
 </footer>
+
+<script>
+    $(function() {
+        passwordchecker.init('passwordInput', 'result');
+    });
+</script>
 
 </body>
 </html>
