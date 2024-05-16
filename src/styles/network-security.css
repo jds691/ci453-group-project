@@ -4,3 +4,34 @@
     --standout-background-color: #FF5A5A;
     --header-background-image: url('../resources/images/og-large-computer-networks.png');
 }
+.hidden {
+    display: none;
+}
+#button-container {
+    display: flex;
+    align-items: center;
+}
+#safe-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#danger-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#next-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
