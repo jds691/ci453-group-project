@@ -1,5 +1,5 @@
 function toWords(number) {
-  //is merely seconds, just return rounded numebr
+  //is merely seconds, just return rounded number
   if (number < 120) {
     return getNumberWords(number, true) + " seconds";
   }

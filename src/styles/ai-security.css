@@ -54,7 +54,7 @@ img {
 
     p {
         font: 22pt sans-serif;
-        margin: 20px 20px 0px 45px;
+        margin: 20px 20px 0 45px;
         color: var(--ltBlue);
     }
 }

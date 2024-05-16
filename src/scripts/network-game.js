@@ -7,7 +7,7 @@ var scenarios = [
   {
       scenario: "Sharing Personal Information Online",
       description: "You're asked to fill out an online survey that requests personal information such as your full name, address, phone number, and school.",
-      assessment: "Dangerous. Sharing personal information online can make you vulnerable to identity theft, cyberstalking, or targeted advertising. Avoid providing sensitive information unless absolutely necessary and trusted."
+      assessment: "Dangerous. Sharing personal information online can make you vulnerable to identity theft, cyber-stalking, or targeted advertising. Avoid providing sensitive information unless absolutely necessary and trusted."
   },
   {
       scenario: "Suspicious Email Attachments",

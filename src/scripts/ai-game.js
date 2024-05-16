@@ -68,7 +68,7 @@
       };
   
       // Determines the next possible valid square given the square (x,y) was ]
-      // invalid and a word lenght of (l).  This greatly reduces the number of
+      // invalid and a word length of (l).  This greatly reduces the number of
       // squares that must be checked. Returning {x: x+1, y: y} will always work
       // but will not be optimal.
       var skipOrientations = {
@@ -148,7 +148,7 @@
       * the word will fit. Options determines if overlap should be maximized or
       * not.
       *
-      * Returns a list of location objects which contain an x,y cooridinate
+       * Returns a list of location objects which contain an x,y coordinate
       * indicating the start of the word, the orientation of the word, and the
       * number of letters that overlapped with existing letter.
       *
