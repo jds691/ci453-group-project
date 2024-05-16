@@ -125,7 +125,12 @@ function displaySuggestions(suggestions) {
   if (suggestions.length == 0) {
     document.getElementById("suggestions").innerHTML = "";
   } else {
-    document.getElementById("suggestions").innerHTML = "<p>" + JSON.stringify(suggestions, null,2) + "</p>";
+    var suggestionList = "<ul>";
+    for (suggestion of suggestions) {
+      suggestionList += "<li>" + suggestion + "</li>";
+    }
+    suggestionList += "</ul>";
+    document.getElementById("suggestions").innerHTML = suggestionList;
   }
 }
 
@@ -133,30 +138,38 @@ function displayStrength(c) {
   var f = "Very Weak";
   var e = "e40808";
 
-  if (c == 0) {
-    f = "Very Weak";
-  }
-  if (c == 1) {
-    f = "Weak";
-    e = "e40808";
-  }
-  if (c == 2) {
-    f = "Medium";
-    e = "ffd800";
-  }
-  if (c == 3) {
-    f = "Strong";
-    e = "2cb117 ";
-  }
-  if (c == 4) {
-    f = "Very Strong";
-    e = "2cb117";
-  }
-  if (c == 5) {
-    f = "No Password";
-    e = "D0D0D0";
-  }
+  switch (c){
 
-  document.getElementById("complexity-span").innerHTML = f;
-  document.getElementById("complexity").style.backgroundColor = "#" + e;
+    case 0:
+      f = "Very Weak";
+      break;
+    
+    case 1:
+      f = "Weak";
+      e = "e40808";
+      break;
+    
+    case 2:
+      f = "Medium";
+      e = "ffd800";
+      break; 
+    
+    case 3:
+      f = "Strong";
+      e = "2cb117 ";
+      break;
+    
+    case 4:
+      f = "Very Strong";
+      e = "2cb117";
+      break;
+
+    case 5:
+      f = "No Password";
+      e = "D0D0D0";
+      break;  
+    }
+
+  document.getElementById("difficulty").innerHTML = f;
+  document.getElementById("difficulty-container").style.backgroundColor = "#" + e;
 }
