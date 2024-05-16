@@ -88,15 +88,19 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="scripts/zxcvbn.js"></script>
         <script src="scripts/password-checker-simple.js"></script>
-        <div>
-            <div id="complexity" style="background-color: gray; padding: 5px;">
+        <div class="standout">
+            <a id="password-checker-simple">
+                <h2>Password Checker Game</h2>
+            </a>
+            
+            <div id="difficulty-container" style="background-color: gray; padding: 5px;">
                 <input type="password" placeholder="Give a strong password!" onkeyup="checkMyPassword(this.value)">
-                <span id="complexity-span">No Password</span>
+                <span id="difficulty">No Password</span>
             </div>
             <div>
-                <p>Time to crack the password:</p>
+                <p>Time to crack the password with 100 attempts per hour:</p>
                 <span id="estimate">
-                    <h1>0 seconds</h1>
+                    <h2>0 seconds</h2>
                 </span>
             </div>
             <div>
@@ -110,7 +114,7 @@
 
     <footer>
         <p><small>CI453 - University of Brighton</small></p>
-        <p><small>Information sourced from the National Cyber Security Center and McKee, J. (2017). The Teen's Guide to Social Media... and Mobile Devices: 21 Tips to Wise Posting in an Insecure World.</small></p>
+        <p><small>Information sourced from the National Cyber Security Center</small></p>
         <p><small><a href="">Words</a></small></p>
         <p><small>2024</small></p>
     </footer>
